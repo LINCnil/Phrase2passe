@@ -45,22 +45,22 @@ Entraînez vous avec notre outil de génération de mot de passe sur le site de 
 Pour utiliser le plugin vous avez besoin de trois éléments :
 
 - Intégrer le code HTML dans votre page
-- Inclure le fichier javascript phrase2pass.js
-- Inclure le fichier de style phrase2pass.single.step.css
+- Inclure le fichier javascript phrase2passe.js
+- Inclure le fichier de style phrase2passe.single.step.css
 
 **Execution du plugin :**
 
 ```
 window.onload = function () {
-    new Phrase2Pass(options);
+    new Phrase2Passe(options);
 };
 ```
 
-ou si vous utilisez phrase2pass.jquery.js (utilisation des sélecteurs jquery pour inclure le plugin)
+ou si vous utilisez phrase2passe.jquery.js (utilisation des sélecteurs jquery pour inclure le plugin)
 ```
 <script type="text/javascript">
    $(document).ready(function () {
-      $(".passwordBloc").phrase2Pass();
+      $(".passwordBloc").phrase2Passe();
    });
 </script>
 ```
@@ -81,7 +81,7 @@ Créer une class héritant de l'interface ValidationRule, interface commune à t
 		["LeNomDeMaClasse", "LeSelectorHTMLDuLibelleDeMonErreur"]
      ]
  };
- new Phrase2Pass(options);
+ new Phrase2Passe(options);
 ```
 L'instance sera automatiquement créée et ajoutée.
 	 
@@ -93,7 +93,7 @@ Créer une classe héritant de l'interface Transformer, interface commune à tou
      // Bean name class typescript
      transformers: ["FirstLetterWordTransFormer", "SpaceTransformer", "ReplaceWordBycharcterInPassWordTransFormer", "ConversioNnumberTransformer","LeNomDeMaClasse"]
  };
- new Phrase2Pass(options);
+ new Phrase2Passe(options);
 ```
 L'instance sera automatiquement créée et ajoutée.
 
@@ -111,7 +111,7 @@ La configuration de la langue est réalisée à partir des paramètres :
 <script type="text/javascript">
     /** Initalise plugin in page */
     $(document).ready(function () {
-        $("#passwordBloc").phrase2Pass({
+        $("#passwordBloc").phrase2Passe({
             language: "fr",
             nextLibelleButton: [
                 ["Generate your password", 0],
