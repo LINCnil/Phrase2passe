@@ -1,0 +1,66 @@
+﻿.page {
+	text-align:center;
+}
+
+.syntaxhighlighter  {
+    width:auto;
+}
+.container {
+  display:inline-block;
+}
+.styled-select {
+    width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    height: 34px;
+}
+.syntaxhighlighter .toolbar {
+    top:-25px;
+}
+form {
+  padding-bottom: 1em;
+}
+#doan {
+    float:left;
+}
+#theme {
+    float:right;
+}
+.col-right {
+  float: none;
+  width: 100%;
+}
+.CSSTableGenerator {
+    margin:0px;padding:0px;
+    width:100%;
+}
+.CSSTableGenerator table{
+    border-collapse: collapse;
+    border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;
+    padding:0px;
+}
+.CSSTableGenerator tr:nth-child(even) {
+    background-color:#ffffff;
+}
+.CSSTableGenerator td {
+	vertical-align:middle;
+	text-align:left;
+	padding:2px;
+	font-family:Arial;
+	font-weight:normal;
+    font-size: 12px;
+	color:#000000;
+}
+    .CSSTableGenerator tr td {
+        border-bottom : 1px solid #666;
+    }
+.CSSTableGenerator tr:first-child td{
+	border:0px solid #000000;
+	font-family:Arial;
+	font-weight:bold;
+    border-bottom : 2px solid #666;
+}

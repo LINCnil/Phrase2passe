@@ -1,0 +1,23 @@
+ /**
+  * File used to compile the code production
+  */
+{
+  "compilerOptions": {
+    "declaration": false,
+    "module": "amd",
+    "noImplicitAny": false,
+    "outFile": "../phrase2passe.js",
+    "removeComments": true,
+    "target": "es5"
+  }
+  ,
+  "files": [
+    "phrase2passe.language.ts",
+    "phrase2passe.model.ts",
+    "phrase2passe.evenement.ts",
+    "phrase2passe.validation.ts",
+    "phrase2passe.transformation.ts",
+    "phrase2passe.view.ts",
+    "phrase2passe.startClass.ts"
+  ]
+}

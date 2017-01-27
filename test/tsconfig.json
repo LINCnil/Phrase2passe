@@ -1,0 +1,15 @@
+ /**
+  * File used to compile the unit test 
+  */
+{
+  "compilerOptions": {
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "target": "es5"
+  },
+  "file": [
+    "tsUnit/tsUnit.ts",
+    "tsUnit/TestUnit.phrase2passe.ts"
+  ]
+}

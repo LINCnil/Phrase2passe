@@ -1,0 +1,376 @@
+﻿/****************************************
+ * .wizard
+ ***************************************/
+.wizard {
+    border-radius:10px;
+    padding:5px;
+    max-width:900px;
+}
+.wizard noscript {
+    color:red;
+    font-size:20px;
+    border:1px solid;
+    padding:10px;
+    margin:20px;
+    font-weight:bold;
+}
+.wizard h2 {
+    color: #fff;
+    padding: 10px;
+    margin: 0px;
+    display: none;
+}
+.wizard > div {
+     padding: 13px;
+}
+.wizard ul > li {
+  padding: 0;
+  list-style-type:none;
+}
+.wizard .notvisible {
+    visibility:hidden;
+}
+.wizard .hidden {
+    display:none;
+}
+.wizard .error {
+     color : #C55252 !important ;
+}
+.wizard a:hover {
+    text-decoration: underline;
+}
+.wizard a {
+    text-decoration: none !important;
+}
+.wizard .number {
+    border-radius: 50%;
+    background-color: #4596ec;
+    width: 40px;
+    display: inline-block;
+    height: 40px;
+    color:#FFFFFF;
+    text-align:center;
+    vertical-align:middle;
+    margin-right:15px;
+    padding-top: 5px;
+}
+/****************************************
+ * .wizard > .step
+ ***************************************/
+.wizard > .steps {
+    background-color:#FFF;
+}
+.wizard > .steps > ul {
+    min-height: 45px;
+    padding-left:0px;
+}
+.wizard > .steps > ul > li  > a {
+  color: #aaa;
+  cursor: default;
+  margin: 0 0.5em 0.5em;
+  padding: 10px;
+  text-decoration: none;
+  display:none;
+}
+.wizard > .steps > ul > li.current > a {
+  font-weight: bold;
+  color: #555555;
+  cursor: default;
+  display:block;
+  font-size:18px;
+  border-radius: 10px 10px 0px 0px;
+}
+/****************************************
+ * .wizard > .content
+ ***************************************/
+ .wizard > .content {
+     font-size: 16px;
+     color: #686767;
+}
+.wizard > .content > .body > input {
+	width:100%;
+    padding:5px;
+    padding-right:0px;
+}
+.wizard > .content > .body > div > div > span > .firstLetter {
+   color: #C94D4D;
+   display:inline;
+}
+.wizard > .content > .body > div > div > span > .nextLetter {
+}
+.wizard > .content > .body > ul > li {
+  color: #fff;
+  margin:3px;
+  padding : 5px;
+}
+.wizard > .content > .body > .lineProgressBar {
+    height:3px;
+    width:0px;
+}
+.wizard > .content > .body ul > li {
+  color: #555555;
+  margin:1px;
+  padding : 2px;
+  text-align:left;
+  margin-left:0px;
+}
+.wizard > .content {
+   overflow: visible;
+   min-height: 6em;
+   background-color : #FFF;
+}
+.wizard > .actions {
+   background-color : #FFF;
+}
+.wizard > .content > .body {
+  padding: 0px;
+}
+.wizard > .content > .body > ul > li.errorrule {
+     color : #C94D4D;
+}
+.wizard > .content > .body >.error {
+     background-color : #C55252;
+}
+.wizard .content .body .notUsedTransformer > ul > li {
+     color: red;
+}
+.wizard > .content > .body > .success {
+    background-color : green;
+}
+.wizard > .content > .body > div > div > span > .hidden {
+    display: none;
+}
+.wizard > .content > .body input {
+  border: 2px solid #ccc;
+}
+.wizard > .content > .body > ul {
+  padding: 0px;
+  list-style-type: none;
+}
+.wizard > .content > .body > .sentenceValidate {
+  padding-bottom: 5px;
+  font-size:22px;
+}
+.wizard > .content > .body .returnLine {
+    display:block;
+}
+/* on prépare le label */
+.wizard > .content input[type="checkbox"]:not(:checked) + label,
+.wizard > .content input[type="checkbox"]:checked + label {
+    position: relative; /* permet de positionner les pseudo-éléments */
+    padding-left: 25px; /* fait un peu d'espace pour notre case à venir */
+    cursor: pointer;    /* affiche un curseur adapté */
+}
+/* Aspect des checkboxes */
+/* :before sert à créer la case à cocher */
+.wizard > .content input[type="checkbox"]:not(:checked) + label:before,
+.wizard > .content input[type="checkbox"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left:0; top: 2px;
+    width: 17px; height: 17px; /* dim. de la case */
+    border: 1px solid #aaa;
+    background: #f8f8f8;
+    border-radius: 3px; /* angles arrondis */
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.3) /* légère ombre interne */
+}
+/* Aspect général de la coche */
+.wizard > .content input[type="checkbox"]:not(:checked) + label:after,
+.wizard > .content input[type="checkbox"]:checked + label:after {
+    content: '✔';
+    position: absolute;
+    top: 0; left: 4px;
+    font-size: 14px;
+    color: #09ad7e;
+    transition: all .2s; /* on prévoit une animation */
+}
+/* Aspect si "pas cochée" */
+.wizard > .content input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0; /* coche invisible */
+    transform: scale(0); /* mise à l'échelle à 0 */
+}
+/* Aspect si "cochée" */
+.wizard > .content input[type="checkbox"]:checked + label:after {
+    opacity: 1; /* coche opaque */
+    transform: scale(1); /* mise à l'échelle 1:1 */
+}
+/* increment li count */
+.wizard .content li.countli {
+    list-style-type: none;
+    counter-increment: repas; 
+    margin-bottom: 10px;
+}
+/** li count */
+.wizard .content li.countli:before  {
+    content: counter(repas);
+    padding: 0 20px 6px;
+    margin-right: 8px;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #4596EC;		
+}
+/** Input */
+.wizard .content input {
+    display: block;
+    width: 100%;
+    min-height: 36px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #555555;
+    vertical-align: middle;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.wizard .content .titleChoiceMdp {
+    color:#555555;
+    font-weight:bold;
+    font-size:15px;
+    text-align:center;
+    margin-bottom:6px;
+}
+.wizard .content .ruleChoiceMdp {
+    color:#555555;
+    font-weight:bold;
+    margin-bottom:0px;
+    text-align:left;
+    margin-top:20px;
+    margin-bottom:7px;
+}
+.wizard .content .ckeckImg {
+    width:20px;
+    height: 20px;
+    position:absolute;
+    left:-20px;
+    background:url(../images/check.jpg) no-repeat;
+}
+.wizard .content .ckeckImgRule {
+    width:20px;
+    height: 20px;
+    position:absolute;
+    left:-20px;
+    background:url(../images/check.jpg) no-repeat;
+}
+.wizard .content .ckeckImgInput {
+    width:40px;
+    height:40px;
+    left:96%;
+    bottom:50px;
+    background:url(../images/check40.jpg) no-repeat;
+    position: relative;
+}
+.wizard .content .imgHaut {
+    width:60px;
+    height:60px;
+    background:url(../images/text_haut.png) no-repeat;
+}
+.wizard .content .imgBas {
+    width:60px;
+    height:60px;
+    float:right;
+    background:url(../images/text_bas.png) no-repeat;
+}
+.wizard .content .ruleStep1 {
+    margin-left:40px;
+    position:relative;
+}
+.wizard .content .inputMdpElement {
+    margin-right:25px;
+    position:relative;
+    height:50px;
+}
+.wizard .content .memorizeDivMdpDivRoot {
+    border:8px solid #D1CCB9;
+    padding-left:20px;
+    padding-bottom:10px;
+}
+.wizard .content .memorizeDivMdpDivRetenir {
+    color:#555555;
+    margin-bottom:20px;
+    text-align:left;
+    margin-top:20px; 
+}
+.wizard .content .notUsedTransformer {
+    /* border: 8px solid #D1CCB9; */
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.wizard .content .divInfo {
+    text-align:center;
+    padding-left:240px;
+}
+.wizard .content div.steps li::before {
+    content : "" !important;
+}
+.wizard > .content input[type="checkbox"]:not(:checked), .wizard > .content input[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+.wizard .content .errorruleparent.nextError {
+    border:8px solid #D1CCB9;
+    padding-left:20px;
+    padding-bottom:10px;
+    margin-bottom:20px !important;
+}
+.wizard .content .listOfWord {
+    margin-left:55px;
+}
+/****************************************
+ * .wizard > .actions
+ ***************************************/
+.wizard div.actions li::before {
+  content: "" !important;
+}
+.wizard > .actions {
+  position: relative;
+  display: block;
+  text-align: right;
+}
+.wizard > .actions > ul {
+  display: inline-block;
+  text-align: right;
+}
+.wizard > .actions > ul > li {
+  margin: 0 0.5em;
+}
+.wizard > .actions a {
+    padding: 8px 15px;
+    color: #ffffff;
+    border: 1px solid #aaa;
+    background: #aaa;
+    border-radius: 10px;
+    display: block;
+   text-decoration:none;
+}
+.wizard > .actions a.active:hover {
+    padding: 8px 15px;
+    color: #4596ec;
+    border: 1px solid #4596ec;
+    background: #ffffff;
+    border-radius: 10px;
+    display: block;
+    cursor:pointer;
+}
+.wizard > .actions a.active {
+    padding: 8px 15px;
+    color: #ffffff;
+    border: 1px solid #4596ec;
+    background: #4596ec;
+    border-radius: 10px;
+    display: block;
+    cursor:pointer;
+}
+.wizard > .actions > ul > li {
+    float:left;
+    list-style-type:none;
+}

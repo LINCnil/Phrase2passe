@@ -1,0 +1,270 @@
+html {
+	min-height:100%;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-size: 0.750em;
+	background-color:#FFFFFF;
+	width:100%; 
+	min-height:100%;
+}
+h1, h2, h3, h4, h5, h6, p, form, input{
+	margin: 0px;
+}
+h1 {
+    font-family: 'open_sans_condensedbold';
+}
+hr {
+	border-top:2px solid #4e4e47;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+fieldset ul li {
+	margin-bottom:10px;
+}
+ul {
+	margin:0px;
+	padding:0px;
+	list-style-type: none;
+}
+fieldset{
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
+form legend {
+	color: #4e4e47;
+	margin: 5px 0 0 0px;
+	width:692px;
+	padding-top:10px;
+}
+label {
+	color: #4e4e47;
+	font-weight: bold;
+}
+ul li input, textarea, select {
+	margin:0px;
+	width:250px;
+}
+.page {
+	/*width:1000px;*/
+	margin:auto;
+	background-color:#ffffff;
+}
+.hide {
+	display: none;
+}
+.align-center, .item_bloc p.align-center, .htmlarea p.align-center {
+	text-align:center;
+	margin-top:20px;
+}
+.footer .social-networks {
+	float: left;
+}
+.footer {
+	color:#ffffff;
+	padding:6px 0px 20px 0;
+	min-height:40px;
+	height:auto;
+}
+.breaker{
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+.menu_bas {
+	padding: 24px 6px 0 70px;
+}	
+#navigation {
+	width:200px;
+	float:left;
+	margin-left:5%;
+}
+#content {
+	background: #E4E5DF;
+}
+#title {
+	border-bottom: 1px dotted #000;
+}
+.legende {
+	float:right;
+}
+.etoile {
+	color:red;
+}
+.oblig {
+	float:right;
+	margin-top:-20px;
+}
+#footer {
+	background-color:#4e4e47;
+	width:1000px;
+	height:110px;
+	float:left;
+}
+.list_lien {
+	border-bottom:1px dotted #FFFFFF;
+}
+.bloc_lien_sociaux {
+	float:right;
+	padding: 0px 6px 0px 0px;
+	margin: 0px 0px 0px 9px;
+	border-right:1px dotted #ffffff;
+}
+#accroche {
+	margin-top:-30px;
+	float:right;
+	font-size: 1em !important;
+}
+#acfin {
+	font-size:1em !important;
+	border-top: 4px solid #4e4e47;
+	padding: 5px 0 40px 5px;
+	background:#FFF;
+}
+#title h1{
+	color:#4e4e47;
+	border-top:4px solid #4e4e47;
+	margin:5px 0 6px 0;
+}
+.ph1 {
+	font-size:11px !important;
+	margin-left: 10px;
+}
+.inter {
+	margin-left:10px;
+}
+.chevron {
+	margin-right:5px;
+}
+.chevron {
+background: #2179C4;
+}
+#btn {
+	margin-top:20px;
+	margin-right:45px;
+}
+#coordonnees {
+	margin-top:5px;
+}
+#right {
+	margin-top:15px;
+}
+ul.centre{
+	margin-left:190px;
+	padding-top:10px
+}
+.ngras {
+	font-weight: normal;
+}
+.btn input {
+    background: url(../../images/cnil/bg_btn.png) no-repeat;
+    color: #FFFFFF;
+    float:right;
+	position:relative;
+	right:60px;
+    font-size: 0.917em;
+	width:67px;
+    height: 29px;
+    padding: 8px 14px 9px 14px;
+    text-transform: uppercase;
+	cursor:pointer;
+	border:none;
+	font-weight:normal;
+}
+.btn input:hover {
+    background:url(../../images/cnil/bg_btn_b.png) no-repeat;
+    color: #FFFFFF;
+    float:right;
+    font-size: 0.917em;
+	width:67px;
+    height: 29px;
+    padding: 8px 14px 9px 14px;
+    text-transform: uppercase;
+	cursor:pointer;
+	border:none;
+	font-weight:normal;
+}
+.nav ul#reversg li#menu {
+	width:916px;
+	height:20px;
+	background-color:#2179C4;
+}
+.lien {
+	color:#2179C4 !important;
+	padding:2px;
+}
+.bloc_telephone {
+	float:right;
+	padding: 6px 14px 0px 14px;
+	border-left:1px dotted #ffffff;
+	border-right:1px dotted #ffffff;
+	color:#ffffff;
+	font-size:1.250em;
+}
+.nav ul#reversg {
+	background: url(../../images/cnil/corner-left.gif) no-repeat left top;
+	padding: 9px 0px 0px 0px;
+}
+#reversd {
+	margin-right:-6px;
+}
+input {
+    display: block;
+    width: 100%;
+    height: 36px;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #555555;
+    vertical-align: middle;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    /*border-radius: 10px;*/
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+@media (max-width:1000px) {
+	.col-left {
+		display : none;
+	}
+	.col-right {
+		width:100%;
+	}
+	.page {
+		width: 100%;
+	}
+	.container {
+		width: 100%;
+	}
+	.bottom_header {
+		width:100%;
+	}
+	#reversd {
+		margin-right: 0px;
+	}
+	.footer {
+        display:none;
+    }
+}
+.print {
+    background: url(../../images/imprimante-noactif.png) no-repeat;
+	font: 0/0 a;
+	height:51px;
+	width:51px;
+	display: inline-block;
+	cursor:pointer;
+}
+.print:hover {
+    background: url(../../images/imprimante-actif.png) no-repeat;
+}

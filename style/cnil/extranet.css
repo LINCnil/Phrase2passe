@@ -1,0 +1,332 @@
+/**********/
+/* Global */
+/**********/
+.page {
+	min-height:100%;
+}
+.formblanck{
+	background-color: #FFFFFF;
+}
+form legend {
+	padding-left:2em;
+}
+form {
+	padding-bottom:4em;
+}
+label {
+	display: inline-block;
+	width: 280px;
+	text-align: right;
+	margin-right:1em;
+	position:absolte;
+	top:0px;
+}
+fieldset {
+	padding-bottom:1em;
+}
+fieldset p {
+	margin-left: 5px;
+	margin-top:15px;
+	margin-bottom:5px;
+	position:relative;
+}
+
+img {
+	border:0px;
+	border: medium none;
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+	outline: medium none;
+}
+
+ul {
+	list-style-type: none;
+}
+input[type="file"] {
+	cursor:pointer;
+}
+
+.titremenu {
+	color: #333333;
+	text-align: center;
+	font-weight: bold;
+	margin:0px;
+}
+
+/**********/
+/* Validation */
+/**********/
+.input_border{
+	border:1px solid #B3B4AF;
+	padding:5px;
+}
+.input_border:focus{
+	border:1px solid #3371AD;
+}
+.input_error{
+	border:1px solid red;
+	padding:5px;
+	color: #9E9E9E;
+	font-style: italic;
+}
+
+/**
+ * Formauliare file
+ */
+
+
+.MultiFile-title {
+	color: black;
+}
+
+.MultiFile-remove {
+	float:left;
+	display: block;
+	width:23px;
+	background: url(../images/delete.gif) no-repeat left;
+}
+.MultiFile-label a:hover{
+	text-decoration:none;
+}
+.MultiFile-label {
+	height:26px;
+}
+
+.MultiFile-wrap {
+	display: inline-block;
+}
+.valueDefault {
+	display:none;
+}
+label {
+	cursor:pointer;
+}
+.ul_error {
+	list-style-type: circle;
+	color: #DF0101;
+}
+
+/**
+ * Progress bar
+ */
+.progress {
+	position: relative;
+	width: 670px;
+	height: 25px;
+	border: 1px solid #DDD;
+	padding: 1px;
+	border-radius: 3px;
+	margin: 0 auto;
+
+}
+.bar {
+	background: url(../images/stripe.png);
+	width: 0%;
+	height: 25px;
+	border-radius: 3px;
+	opacity:0.4;
+	font-weight:bold;
+	filter : alpha(opacity=40); /* for IE <= 8 */
+}
+.percent {
+	padding-top: 5px;
+	position: relative;
+	bottom: 25px;
+	text-align: left;
+	padding-left: 100px;
+	font-weight:bold;
+
+}
+.infoData {
+	margin-left:350px;
+	width:300px;
+	font-size:11px;
+	margin-top:0px;
+}
+.msgerror {
+	border:1px solid;
+	padding: 1em;
+	color: #DF0101;
+}
+.imageLoading {
+	position: absolute;
+	display:none;
+	right:4px;
+	top:5px;
+	width:18px;
+}
+.sizeFormBig {
+	width:200px;
+}
+.sizeFormSmall {
+	width:100px;
+}
+.sizeFormVerySmall {
+	width:50px;
+}
+.labelCpOrganisme {
+	display: inline;
+}
+.forLabelCpOrganisme {
+	display: inline;
+}
+#numdoc {
+	display: inline;
+}
+@media (max-width:1000px) {
+	html , body {
+		height: 100%;
+	}
+	.forLabelCpOrganisme {
+		display: inline-block;
+		margin-top:20px;
+	}
+	.page {
+		width: 100%;
+		margin: 0px;
+		background-color: #FFF;
+	}
+	.labelCpOrganisme {
+		display: block;
+	}
+	.titre h1 {
+		font-size: 1.5em;
+	}
+	.col-left {
+		width: 23%;
+		display: inline;
+	}
+	.col-right {
+		width: 73%;
+		display: inline;
+	}
+	.container {
+		width: 100%;
+		margin: 0px;
+	}
+	label {
+		display: inline-block;
+		/*width: 80%;*/
+		text-align: inherit;
+	}
+	.infoData {
+		margin-left: 30px;
+		width: 80%;
+	}
+	.bottom_header {
+		width:100%
+	}
+	#reversd {
+		margin-right: 0px;
+	}
+	.footer {
+		padding: 0px;
+		width: 100%
+	}
+	form legend {
+		margin: 0px;
+		width: 80%;
+	}
+	label {
+		width: 40%;
+	}
+	.list_lien {
+		display: none;
+	}
+}
+@media handheld and (max-width:1000px), (max-width:650px) {
+	.titre {
+		display: inline-block;
+		width:98%
+	}
+	.sizeFormVerySmall {
+		width:90%;
+	}
+	.sizeFormBig, .MultiFile-wrap {
+		width:90%;
+	}
+	.sizeFormSmall, .MultiFile-wrap {
+		width:90%;
+	}
+	.breadcrumb {
+		display:none;
+	}
+	input {
+		width: 80%;
+	}
+	#acfin {
+		display:none;
+	}
+	.titre {
+		margin: 5px;
+	}
+	.col-left {
+		display: none;
+	}
+	.content_top_header {
+		display:none;
+	}
+	.center_header {
+		font-size: 1em;
+	}
+	.bottom_header {
+		width: 100%;
+	}
+	.container {
+		width: 100%;
+		margin: 0px;
+	}
+	.col-right {
+		float: none;
+		width: 100%;
+	}
+	.titre h1 {
+		font-size: 1.3em;
+	}
+	.bloc_outils {
+		display:none;
+	}
+	.oblig {
+		display: none;
+	}
+	form legend {
+		width: 90%;
+	}
+	label {
+		display: inline-block;
+		width: 90%;
+		text-align: inherit;
+	}
+	.aide {
+		display: none;
+	}
+	.col-right .titre h1 {
+		width: 100%;
+	}
+	input[type="file"] {
+		width: 100%;
+	}
+	fieldset p {
+		margin-left: 20px;
+	}
+	.breaker {
+		display:none;
+	}
+	body {
+		margin: 0px;
+		padding: 0px;
+		width: 100%;
+	}
+	.center_header {
+		display:none;
+	}
+	.top_header {
+		display:none;
+	}
+	#accroche {
+		margin-bottom: 5px;
+	}
+}

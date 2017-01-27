@@ -1,0 +1,128 @@
+.top_header {
+	background:#4e4e47;
+	padding:3px 0px 4px 0;
+	margin:0 0 7px 0;
+	overflow:hidden;
+}
+.center_header {
+	border-bottom: 1px dotted #333333;
+	color: #1f1f1f;
+	font-style:oblique;
+	font-size: 1.333em;
+	text-align:center;
+	margin: 0 0 23px 0;
+	padding: 0px 0 5px 0;
+}
+.bottom_header  {
+	width:910px;
+	margin:0 auto 0px auto;
+}
+.logo {
+	margin:0 0 25px 17px;
+	text-align:left;
+}
+.nav {
+	background: url("../../images/cnil/corner-right.gif") no-repeat right top;
+	padding:0px 0px 0px 0px;
+	margin:0px 0px 32px 0px;
+	position:relative;
+	z-index:11;
+}
+.breadcrumb {
+	font-size:0.917em;
+	overflow:hidden;
+	clear:both;
+	margin-bottom:10px;
+}
+
+.breadcrumb li {
+	background: url("../../images/cnil/separateur_chemin_fer.png") no-repeat  right 5px;
+	float:left;
+	margin: 0 4px 0 0;
+	padding: 0 9px 0 0;
+	color: #454542;
+}
+.breadcrumb li.last {
+	background: none;
+}
+.breadcrumb li a {
+	color: #454542;
+}
+.list_lien {
+	text-align:center;
+	font-size:0.8em;
+	padding:0px 0px 5px 0;
+}
+.list_lien li {
+	display:inline;
+	color:#f5f5f5;
+	padding:0 5px 0 9px;
+	margin:0 0 0 0;
+}
+.list_lien li a {
+	color:#f5f5f5;
+	font-size:12px;
+}
+.container {
+	width:910px;
+	margin:0 auto 20px auto;
+}
+.item_bloc {
+	margin: 0px 0 20px 0;
+	position:relative;
+}
+.chevron {
+	position:absolute;
+	right:5px;
+	top:0px;
+	height:23px;
+	width:6px;
+}
+.col-left {
+	float: left;
+	margin: 0 19px 0 0;
+	width: 198px;
+}
+.item_bloc.interne {
+	border:1px solid #cccfd1;
+}
+.item_bloc.interne h3 {
+	background: none;
+	border-bottom: 1px dotted #333333;
+	color: #4e4e47;
+	font-size: 1.667em;
+	padding: 6px 10px 12px 13px;
+	text-transform: none;
+}
+.col-right {
+	float: right;
+	width: 692px;
+}
+.titre {
+	color: #4E4E47;
+	margin: 0 0 22px;
+	padding: 2px 0 3px 0;
+	overflow:hidden;
+}
+.titre h1 {
+	color: #333333;
+	font-size:38px;
+}
+.col2-left .titre h1{
+	width: 445px;
+}
+
+.outils span {
+	float:right;
+	margin: 0px 0px 0px 13px;
+}
+.htmlarea a {
+	font-weight:bold;
+}
+form  legend {
+	color: #4e4e47;
+	font-size: 1.333em;
+	padding: 0px 0px 4px 0px;
+	margin: 0px 0px 0px 0px;
+	display:block;
+}

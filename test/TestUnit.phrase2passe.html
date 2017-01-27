@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="fr" lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="-1" />
+
+        <title>Test : Cr&eacute;er son mot de passe personnel</title>
+
+        <!-- common theme extranet include -->
+        <link type="text/css" rel="stylesheet" href="../style/cnil/extranet.css" />
+        <link type="text/css" rel="stylesheet" href="../style/cnil/screenInner.css" />
+        <link type="text/css" rel="stylesheet" href="../style/cnil/template.css" />
+        <link type="text/css" rel="stylesheet" href="../style/cnil/theme_institution.css" />
+        <link type="text/css" rel="stylesheet" href="../style/cnil/app.css" />
+
+        <!--plugin phrase2passe include -->
+        <script type="text/javascript" src="../tsscript/phrase2passe.language.js"></script>
+        <script type="text/javascript" src="../tsscript/phrase2passe.model.js"></script>
+        <script type="text/javascript" src="../tsscript/phrase2passe.validation.js"></script>
+        <script type="text/javascript" src="../tsscript/phrase2passe.transformation.js"></script>
+        <script type="text/javascript" src="../tsscript/phrase2passe.evenement.js"></script>
+        <script type="text/javascript" src="../tsscript/phrase2passe.view.js"></script>
+  
+
+        <!--plugin test include -->
+        <script type="text/javascript" src="tsUnit/tsUnit.js"></script>
+        <script type="text/javascript" src="tsUnit/phrase2passe.evenement.test.js"></script>
+        <script type="text/javascript" src="tsUnit/phrase2passe.transformation.test.js"></script>
+        <script type="text/javascript" src="tsUnit/phrase2passe.validation.test.js"></script>
+        <script type="text/javascript" src="tsUnit/phrase2passe.view.test.js"></script>
+        <script type="text/javascript" src="tsUnit/TestUnit.phrase2passe.js"></script>
+
+    </head>
+    <body>
+        <div class="top_header">
+            <div class="content_top_header menu-utilitaire">
+                <a href="https://www.cnil.fr/fr/mediatheque">M&eacute;diath&egrave;que</a>
+                |
+                <a href="https://www.cnil.fr/fr/glossaire">Glossaire</a>
+                |
+                <a href="https://www.cnil.fr/fr/cnil-direct" title="Besoin d'aide">Besoin d'aide</a>
+                |
+                <a href="https://www.correspondants.cnil.fr/">Extranet Cil</a>
+                |
+                <a href="https://www.cnil.fr/fr/espace-presse">Presse</a>
+            </div>
+        </div>
+        <div class="page">
+            <div class="header">
+                <div class="bottom_header" style="margin-top:20px;text-align:center;">
+                    <div class="logo" style="text-align: center;">
+                        <a href="http://www.cnil.fr/">
+                            <img src="../images/cnil/logo_CNIL.png" alt="Retour au site cnil.fr" title="CNIL" style="width:275px;" />
+                        </a>
+                    </div>
+                    <div style="color: #999999;font-style: italic;font-size: 16px;margin-bottom:25px;">
+                        Prot&eacute;ger les donn&eacute;es personnelles, accompagner l'innovation, pr&eacute;server les libert&eacute;s individuelles
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-right">
+                    <div class="titre">
+                        <h1><span id="titleForm" style="width:350px;">Test : Cr&eacute;er son mot de passe personnel</span></h1>
+                        <div class="bloc_outils">
+                            <div class="outils">
+                                <span onclick="javascript:window.print();" class="print" title="imprimer">
+                                    Imprimer
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="oblig"><b>Le code s'ex&eacute;cute au sein votre navigateur web, aucun mot de passe n'est r&eacute;cup&eacute;r&eacute; par le site de la CNIL</b></span>
+                    <!-- start include plugin hidden -->
+                    <div id="passwordBloc" style="display:none;" >
+                        <noscript><p>Votre navigateur ne supporte pas le javascript ou ce dernier est d&eacute;sactiv&eacute;</p></noscript>
+
+                        <!--Step 1 -->
+                        <h3>Choisissez une phrase que vous retiendrez facilement</h3>
+                        <div class="contentElement">
+                            <div class="titleChoiceMdp">Saisissez votre phrase</div>
+                            <div class="inputMdpElement">
+                                <input id="sentenceInput" value="Saisir une phrase, de préférence ponctuée" />
+                                <div class="lineProgressBar"></div>
+                                <div id="checkImage" class="hidden ckeckImgInput"></div>
+                            </div>
+                            <div class="ruleChoiceMdp">
+                                Les r&egrave;gles pour construire une phrase mot de passe valide :
+                            </div>
+                            <ul class="ruleStep1">
+                                <li class="countli rule1">
+                                    <span class="hidden ckeckImg"></span>
+                                    Votre phrase doit comporter <b>au moins 10 mots</b>
+                                </li>
+                                <li class="countli rule7">
+                                    <span class="hidden ckeckImg"></span>
+                                    Elle doit comporter <b>un chiffre</b>
+                                </li>
+                                <li class="countli rule2">
+                                    <span class="hidden ckeckImg"></span>
+                                    Elle doit comporter <b>au moins une majuscule</b>
+                                </li>
+                                <li class="countli rule4">
+                                    <span class="hidden ckeckImg"></span>
+                                    Elle dispose d&acute;<b>au moins un caract&egrave;re de ponctuation</b> (ou caract&egrave;re sp&eacute;cial)
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--Step 2 -->
+                        <h3>Le mot de passe</h3>
+                        <div class="contentElement">
+                            <div class="divInfo">
+                                <div style="color:#4596EC;letter-spacing: 2px;font-weight:bold;width:400px;font-size:25px;padding: 20px;background-color:#D8D8D8;" class="sentenceValidate" id="sentenceValidate"></div>
+                            </div>
+                            <div style="color:#555555;font-weight:bold;margin-bottom:20px;text-align:left;margin-top:20px;">Est associ&eacute; &agrave; la phrase :</div>
+                            <div style="margin-bottom:70px;">
+                                <div class="imgHaut"></div>
+                                <div style="font-size:20px;text-align:center;" class="phraseSaisi" ></div>
+                                <div class="imgBas"></div>
+                            </div>
+                            <ul style="margin-top:20px;" class="nextError">
+                                <li class="warningrule hidden rule3">
+                                    <span class="hidden ckeckImg"></span>
+                                    Attention (d&eacute;conseill&eacute;) : votre mot de passe ne contient pas de minuscule
+                                </li>
+                                <li class="warningrule hidden rule5">
+                                    <span class="hidden ckeckImg"></span>
+                                    Attention (d&eacute;conseill&eacute;) : votre mot de passe contient peut-&ecirc;tre une date de naissance
+                                </li>
+                                <li class="warningrule hidden rule6">
+                                    <span class="hidden ckeckImg"></span>
+                                    Attention (d&eacute;conseill&eacute;) : votre mot de passe contient une suite de chiffre
+                                </li>
+                                <li class="warningrule hidden rule8">
+                                    <span class="hidden ckeckImg"></span>
+                                    Attention (d&eacute;conseill&eacute;) : votre mot de passe contient des caract&egrave;res qui se suivent dans l&quot;ordre alphab&eacute;tique
+                                </li>
+                                <li class="warningrule hidden rule9">
+                                    <span class="hidden ckeckImg"></span>
+                                    Attention (d&eacute;conseill&eacute;) : votre mot de passe contient des caract&egrave;res qui se suivent sur le clavier
+                                </li>
+                            </ul>
+                            <div class="memorizeDivMdpDivRoot">
+                                <div class="memorizeDivMdpDivRetenir">Pour le retenir</div>
+                                <div>
+                                    <ul>
+                                        <li class="countli">M&eacute;morisez exactement la phrase que vous avez choisi</li>
+                                        <li class="countli">Ne conservez que les premi&egrave;res lettres de chaque mot</li>
+                                        <li class="countli">Conservez les majuscules</li>
+                                        <li class="countli">Conservez la ponctuation et les caract&egrave;res sp&eacute;ciaux</li>
+                                        <li class="countli">Conservez le(s) chiffre(s)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div style="margin-top:20px;">
+                                <span class="number"> &gt; </span>
+                                <span style="font-weight: bold;color: #555555;">Renforcez votre mot de passe</span>
+                                <div style="margin-top:8px;margin-left:20px;">
+                                    La robustesse de votre mot de passe peut &ecirc;tre am&eacute;lior&eacute;e en appliquant les modifications suivantes :
+
+                                    <ul style="margin-top:8px;">
+                                        <li class="countli">Eviter de choisir un nombre compris entre 1950 et 2049</li>
+                                        <li class="countli">Ajouter une ponctuation ou un caractère spécial (dollar, dièse, ...)</li>
+                                        <li class="countli">Utiliser un emoticône pour remplacer le mot correspondant, comme remplacer le mot "sourire" par :-)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Step 3 -->
+                        <h3>Le mot de passe renforc&eacute;</h3>
+                        <div class="contentElement">
+                            <div class="divInfo">
+                                <div style="color:#4596EC;letter-spacing: 2px;font-weight:bold;width:400px;font-size:25px;padding: 20px;background-color:#D8D8D8;" class="sentenceValidate" id="sentenceValidate2"></div>
+                            </div>
+                            <div style="color:#555555;font-weight:bold;margin-bottom:20px;text-align:left;margin-top:20px;">Est associ&eacute; &agrave; la phrase :</div>
+                            <div style="margin-bottom:70px;">
+                                <div class="imgHaut"></div>
+                                <div style="font-size:20px;text-align:center;" class="phraseSaisi" ></div>
+                                <div class="imgBas"></div>
+                            </div>
+                            <ul style="margin-top:20px;">
+                                <li class="warningrule hidden rule8">Attention : votre mot de passe contient des caract&egrave;res qui se suivent dans l&quot;ordre alphab&eacute;tique</li>
+                                <li class="warningrule hidden rule9">Attention : votre mot de passe contient des caract&egrave;res qui se suivent sur le clavier</li>
+                            </ul>
+
+                            <div class="memorizeDivMdpDivRoot">
+                                <div class="memorizeDivMdpDivRetenir">Pour le retenir</div>
+                                <div>
+                                    <ul>
+                                        <li class="countli">M&eacute;morisez exactement la phrase que vous avez choisi</li>
+                                        <li class="countli">Ne conservez que les premi&egrave;res lettres de chaque mot</li>
+                                        <li class="countli">Conservez les majuscules</li>
+                                        <li class="countli">Conservez la ponctuation et les caract&egrave;res sp&eacute;ciaux</li>
+                                        <li class="countli">Conservez le(s) chiffre(s)</li>
+                                        <li class="countli">Transformation des chiffres alphanum&eacute;riques en chiffres num&eacute;rique</li>
+                                        <li class="countli">Transformation des mots en caract&egrave;re sp&eacute;ciaux</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <br />
+                            <!-- Transformation -->
+                            <div style="margin-top:20px;">
+                                <span class="number"> &gt; </span>
+                                <span style="font-weight: bold;color: #555555;">Transformations proposées pour renforcer votre mot de passe</span>
+                                <!-- List transformation not used -->
+                                <div class="notUsedTransformer hidden">
+                                    <ul>
+                                        <li class="conversionNumberTransformerNotUsed hidden">La conversion des nombres écrits en lettres par des nombres en chiffres n'est pas utilisée</li>
+                                        <li class="conversionWordInCaracterTransformerNotUsed hidden">La conversion d'un mot par caractère spécial (ex : un par 1, clin d&acute;oeil par ;-) ) n'est pas utilisée</li>
+                                    </ul>
+                                </div>
+                                <!-- List transformation explanation -->
+                                <ul class="listMotTransformer"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end include plugin hidden -->
+
+                    <div style="text-align:left;margin-left:10px;padding-top:40px;">
+                        <h1 class="titre">Validators</h1>
+                        <div style="margin:10px;" id="results1"></div>
+                        <h1 class="titre" style="margin-top:40px;">Transformers</h1>
+                        <div style="margin:10px;" id="results2" ></div>
+                        <h1 class="titre" style="margin-top:40px;">Services</h1>
+                        <div style="margin:10px;" id="results3"></div>
+                        <h1 class="titre" style="margin-top:40px;">Evenements</h1>
+                        <div style="margin:10px;" id="results6"></div>
+                        <h1 class="titre" style="margin-top:40px;">Interface graphique</h1>
+                        <div style="margin:10px;" id="results4"></div>
+                        <h1 class="titre" style="margin-top:40px;">Performanaces</h1>
+                        <div style="margin:10px;" id="results5"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <a name="bas"></a>
+                <ul class="list_lien">
+                    <li class="first">
+                        <a href="http://www.cnil.fr/pied-de-page/contactez-nous/">Contactez-nous</a>
+                    </li>
+                    <li>
+                        <a href="http://www.cnil.fr/pied-de-page/vos-donnees/">Vos donn&eacute;es</a>
+                    </li>
+                    <li>
+                        <a href="http://www.cnil.fr/pied-de-page/cookies-statistiques/">Cookies &amp; Statistiques</a>
+                    </li>
+                    <li>
+                        <a href="http://www.cnil.fr/pied-de-page/infos-editeurs/">Infos Editeurs</a>
+                    </li>
+                    <li>
+                        <a href="http://www.cnil.fr/pied-de-page/nous-recrutons/">Recrutement</a>
+                    </li>
+                    <li>
+                        <a href="http://www.cnil.fr/pied-de-page/marches-publics/">March&eacute;s publics</a>
+                    </li>
+                    <li>
+                        <a href="http://www.cnil.fr/linstitution/actualite/espace-presse/">Presse</a>
+                    </li>
+                    <li>
+                        <a href="http://www.cnil.fr/pied-de-page/plan/">Plan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
