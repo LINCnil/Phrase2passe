@@ -154,7 +154,7 @@ return Languages.initLanguage([
 
 ##Contribuer
 
-**Phrase2pass est disponible sous license GPLv3 et peut être enrichi par chacun des utilisateurs.** Les plus expérimentés peuvent améliorer cette version initiale de notre outil ou corriger les bugs éventuels. N'oubliez pas de soumettre vos contributions via des pull-requests.
+**Phrase2passe est disponible sous license GPLv3 et peut être enrichi par chacun des utilisateurs.** Les plus expérimentés peuvent améliorer cette version initiale de notre outil ou corriger les bugs éventuels. N'oubliez pas de soumettre vos contributions via des pull-requests.
 
 **Vous avez une idée que vous souhaitez partager avec nous pour améliorer ce projet ?** Vous avez envie de vous appuyer sur cette base pour construire un projet de pédagogie de la traçabilité numérique ? Vous pouvez contacter l’équipe du laboratoire CNIL par mail - ip(at)cnil.fr - ou via le compte Twitter @LINCnil.
 
