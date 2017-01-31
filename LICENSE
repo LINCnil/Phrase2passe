@@ -1,4 +1,4 @@
-PassWord CNIL est un outil permettant de générer un mot de passe en dérivant une phrase
+Phrase2passe CNIL est une implémentation d'un algorithme permettant de générer un bon mot de passe à partir d'une phrase de passe.
  
  Copyright (c) 2016, Olivier PASQUET
  
