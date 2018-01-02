@@ -1,12 +1,12 @@
-﻿#Phrase2passe
+# Phrase2passe
 
-##Introduction
+## Introduction
 
-####Le projet Phrase2passe
+#### Le projet Phrase2passe
 
 Ce projet est une implémentation d'un algorithme permettant de générer un bon mot de passe à partir d'une phrase de passe.
 
-####Mot de passe et Ingénierie Sociale
+#### Mot de passe et Ingénierie Sociale
 
 Le choix d'un mot de passe peut en dire long sur vous et votre vie privée. Il n'est pas conseillé d'utiliser votre nom de famille, vos prénoms ou même les prénoms de vos proches tout comme les dates de naissances...
 
@@ -16,7 +16,7 @@ Il est relativement aisé pour un pirate de faire de l'Ingénierie Sociale (Soci
 - Eviter d'intégrer votre date de naissance dans le mot de passe et ce même en changeant l'ordre des chiffres.
 - Ne pas utiliser des titres de roman (toujours le même), le nom de votre artiste préféré, etc.
 
-####Mais comment faire ?
+#### Mais comment faire ?
 Oui c'est très compliqué, mais vous pouvez par exemple choisir une citation que vous aimez et vous en servir comme "phrase de passe". C'est-à-dire où par exemple les première lettres de chaque mots vont constituer votre mot de passe final.
 
 Il est également possible d'ajouter des smileys dans votre mot de passe ce qui permettra d'avoir des caractères spéciaux, exemple :
@@ -32,15 +32,15 @@ J1;-)àlC&aL!
 ```
 Entraînez vous avec notre outil de génération de mot de passe sur le site de la CNIL ou avec le code source proposé.
 
-##Installation
+## Installation
 
-####Configuration environnement Visual Studio 2015
+#### Configuration environnement Visual Studio 2015
 
 - Télécharger Visual Studio 2015 https://www.visualstudio.com/fr/downloads/
 - Télécharger pack langue https://www.microsoft.com/fr-fr/download/details.aspx?id=48157
 - Télécharger typeScript https://www.microsoft.com/fr-fr/download/details.aspx?id=48593
 
-##Utilisation
+## Utilisation
 
 Pour utiliser le plugin vous avez besoin de trois éléments :
 
@@ -65,9 +65,9 @@ ou si vous utilisez phrase2passe.jquery.js (utilisation des sélecteurs jquery p
 </script>
 ```
 
-##Personnalisation du plugin
+## Personnalisation du plugin
 
-###Comment ajouter une règle de validation ?
+### Comment ajouter une règle de validation ?
 
 Créer une class héritant de l'interface ValidationRule, interface commune à toute règles de validation, interface contenu dans le fichier phrase2pass.validation.ts.
 ```
@@ -85,7 +85,7 @@ Créer une class héritant de l'interface ValidationRule, interface commune à t
 ```
 L'instance sera automatiquement créée et ajoutée.
 	 
-####Comment ajouter un élement de transformation ?
+#### Comment ajouter un élement de transformation ?
 
 Créer une classe héritant de l'interface Transformer, interface commune à toutes les transformations : interface contenue dans le fichier phrase2pass.transformation.ts.
 ```
@@ -97,9 +97,9 @@ Créer une classe héritant de l'interface Transformer, interface commune à tou
 ```
 L'instance sera automatiquement créée et ajoutée.
 
-####Comment ajouter ou configurer une langue ?
+#### Comment ajouter ou configurer une langue ?
 
-####Configuration d'une langue
+#### Configuration d'une langue
 
 La configuration de la langue est réalisée à partir des paramètres :
 
@@ -128,7 +128,7 @@ La configuration de la langue est réalisée à partir des paramètres :
 
 L'essentiel du texte est contenu dans la partie HTML du plugin, il suffit de modifier le texte dans le HTML, ces modifications non pas d'impact à l'éxécution du code.
 
-####Intégration d'une langue
+#### Intégration d'une langue
 
 Le fichier phrase2pass.language.ts contient les mots ou liste liste de mots utilisés par le moteur du code.
 
@@ -152,7 +152,7 @@ return Languages.initLanguage([
         ]);
 ```
 
-##Contribuer
+## Contribuer
 
 **Phrase2passe est disponible sous license GPLv3 et peut être enrichi par chacun des utilisateurs.** Les plus expérimentés peuvent améliorer cette version initiale de notre outil ou corriger les bugs éventuels. N'oubliez pas de soumettre vos contributions via des pull-requests.
 
