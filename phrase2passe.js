@@ -1239,7 +1239,7 @@ var ViewSetp = (function () {
         };
     };
     ViewSetp.prototype.updateCssClassActionValidation = function (step) {
-        this.previous.innerHTML = this.getLibellePreviousButton(step);
+        this.previous.textContent = this.getLibellePreviousButton(step);
         if (step === 0) {
             ToolClassManaged.addClass(this.previous, "notvisible");
             ToolClassManaged.removeClass(this.previous, "active");
@@ -1248,7 +1248,7 @@ var ViewSetp = (function () {
             ToolClassManaged.addClass(this.previous, "active");
             ToolClassManaged.removeClass(this.previous, "notvisible");
         }
-        this.next.innerHTML = this.getLibelleNextButton(step);
+        this.next.textContent = this.getLibelleNextButton(step);
         if (this.isLastStep(step)) {
             ToolClassManaged.addClass(this.next, "notvisible");
             ToolClassManaged.removeClass(this.next, "active");
@@ -1406,12 +1406,12 @@ var ViewSetp = (function () {
         var phraseValidateHTMLElement = this.getElementInContentByStep(step, this.phraseValidateSelector);
         if (phraseValidateHTMLElement) {
             var span = document.createElement("span");
-            span.innerHTML = password.getPassWord().replace(/\s/g, '');
+            span.textContent = password.getPassWord().replace(/\s/g, '');
             phraseValidateHTMLElement.innerHTML = "";
             phraseValidateHTMLElement.appendChild(span);
         }
         for (var i = 0; i < this.phraseSaisi.length; i++) {
-            this.phraseSaisi.item(i).innerHTML = this.phraseInputHtmlElement.value;
+            this.phraseSaisi.item(i).textContent = this.phraseInputHtmlElement.value;
         }
     };
     ViewSetp.prototype.getElementsInContentByStep = function (step, selector) {

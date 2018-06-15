@@ -501,7 +501,7 @@ class ViewSetp {
      */
     public updateCssClassActionValidation(step: number) {
         // update css button previous
-        this.previous.innerHTML = this.getLibellePreviousButton(step);
+        this.previous.textContent = this.getLibellePreviousButton(step);
         if (step === 0) {
             ToolClassManaged.addClass(this.previous, "notvisible");
             ToolClassManaged.removeClass(this.previous, "active");
@@ -512,7 +512,7 @@ class ViewSetp {
         }
 
         // update css button next
-        this.next.innerHTML = this.getLibelleNextButton(step);
+        this.next.textContent = this.getLibelleNextButton(step);
         if (this.isLastStep(step)) {
             ToolClassManaged.addClass(this.next, "notvisible");
             ToolClassManaged.removeClass(this.next, "active");
@@ -808,7 +808,7 @@ class ViewSetp {
         if (phraseValidateHTMLElement) {
             // Create password
             let span: HTMLSpanElement = document.createElement("span");
-            span.innerHTML = password.getPassWord().replace(/\s/g, '');
+            span.textContent = password.getPassWord().replace(/\s/g, '');
 
             //Update view
             phraseValidateHTMLElement.innerHTML = "";
@@ -816,7 +816,7 @@ class ViewSetp {
         }
         // Update All phrase phraseSaisi element
         for (let i: number = 0; i < this.phraseSaisi.length; i++) {
-            this.phraseSaisi.item(i).innerHTML = this.phraseInputHtmlElement.value;
+            this.phraseSaisi.item(i).textContent = this.phraseInputHtmlElement.value;
         }
     }
 
